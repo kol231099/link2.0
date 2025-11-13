@@ -1,0 +1,5 @@
+venv/
+link-server/venv/
+__pycache__/
+*.pyc
+
