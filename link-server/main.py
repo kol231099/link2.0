@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()   # 讀取 .env
+
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import tempfile, subprocess, os, sys
