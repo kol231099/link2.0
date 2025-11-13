@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E70654342EC379A9009C9DC7 /* CDitem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70654332EC379A9009C9DC7 /* CDitem+CoreDataProperties.swift */; };
+		E70654352EC379A9009C9DC7 /* CDitem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70654322EC379A9009C9DC7 /* CDitem+CoreDataClass.swift */; };
+		E70654362EC3820C009C9DC7 /* LinkModel.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = E7E910D82EC36B5B00AF1EB7 /* LinkModel.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E7E910BC2EC3244600AF1EB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,25 +30,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E70654322EC379A9009C9DC7 /* CDitem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDitem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E70654332EC379A9009C9DC7 /* CDitem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDitem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E7E910AE2EC3244500AF1EB7 /* link2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = link2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E910BB2EC3244600AF1EB7 /* link2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = link2.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E910C52EC3244600AF1EB7 /* link2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = link2.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7E910D92EC36B5B00AF1EB7 /* LinkModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LinkModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E7E910B02EC3244500AF1EB7 /* link2.0 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = link2.0;
-			sourceTree = "<group>";
-		};
-		E7E910BE2EC3244600AF1EB7 /* link2.0Tests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = link2.0Tests;
-			sourceTree = "<group>";
-		};
-		E7E910C82EC3244600AF1EB7 /* link2.0UITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = link2.0UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +74,10 @@
 		E7E910A52EC3244500AF1EB7 = {
 			isa = PBXGroup;
 			children = (
+				E70654322EC379A9009C9DC7 /* CDitem+CoreDataClass.swift */,
+				E70654332EC379A9009C9DC7 /* CDitem+CoreDataProperties.swift */,
+				E7E910D82EC36B5B00AF1EB7 /* LinkModel.xcdatamodeld */,
 				E7E910B02EC3244500AF1EB7 /* link2.0 */,
-				E7E910BE2EC3244600AF1EB7 /* link2.0Tests */,
-				E7E910C82EC3244600AF1EB7 /* link2.0UITests */,
 				E7E910AF2EC3244500AF1EB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +130,6 @@
 			dependencies = (
 				E7E910BD2EC3244600AF1EB7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				E7E910BE2EC3244600AF1EB7 /* link2.0Tests */,
-			);
 			name = link2.0Tests;
 			packageProductDependencies = (
 			);
@@ -152,9 +149,6 @@
 			);
 			dependencies = (
 				E7E910C72EC3244600AF1EB7 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				E7E910C82EC3244600AF1EB7 /* link2.0UITests */,
 			);
 			name = link2.0UITests;
 			packageProductDependencies = (
@@ -212,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70654362EC3820C009C9DC7 /* LinkModel.xcdatamodeld in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70654342EC379A9009C9DC7 /* CDitem+CoreDataProperties.swift in Sources */,
+				E70654352EC379A9009C9DC7 /* CDitem+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +575,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E7E910D82EC36B5B00AF1EB7 /* LinkModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E7E910D92EC36B5B00AF1EB7 /* LinkModel.xcdatamodel */,
+			);
+			currentVersion = E7E910D92EC36B5B00AF1EB7 /* LinkModel.xcdatamodel */;
+			path = LinkModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E7E910A62EC3244500AF1EB7 /* Project object */;
 }
