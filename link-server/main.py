@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-import tempfile, subprocess, os
+import tempfile, subprocess, os, sys
 
 from ig_extract import extract_ig_metadata
 from audio_transcribe import extract_audio, transcribe_audio
@@ -31,7 +31,7 @@ def ingest(req: IngestReq):
         if cookies and os.path.exists(cookies):
             print(f"🍪 使用 cookies 檔案: {cookies}")
             cmd += ["--cookies", cookies]
-        cmd += [url]
+        cmd = [sys.executable, "-m", "yt_dlp", "-f", "mp4", "-o", video_path]
         print("🧩 執行 yt-dlp 指令:", " ".join(cmd))
         subprocess.run(cmd, capture_output=True)
         print("✅ [Step 1] 影片下載完成")
